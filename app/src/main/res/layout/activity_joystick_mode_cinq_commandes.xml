@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/off_white"
+    tools:context=".controller.JoystickModeCinqCommandesActivity">
+
+    <Switch
+        android:id="@+id/switchModeLego3D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mode 3D"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:thumbTint="@color/yellow_handitech"
+        android:trackTint="@color/blue_handitech"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDeviceName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.965"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBluetoothSettings"
+        app:layout_constraintVertical_bias="0.312" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Entier Envoyé :"
+        android:textAlignment="textStart"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:textStyle="normal|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <TextView
+        android:id="@+id/textViewSendValue"
+        android:layout_width="65dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="144dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.71"
+        app:layout_constraintStart_toEndOf="@+id/textView5"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.264" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3C3C3E"
+        android:text="Home"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonBluetoothSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#DCD1D1"
+        android:text="Bluetooth settings"
+        android:textColor="#000000"
+        android:paddingHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.949"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.026" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPositionForward"
+        android:layout_width="320dp"
+        android:layout_height="104dp"
+        android:background="@color/blue_handitech"
+        android:hapticFeedbackEnabled="true"
+        android:text="Avancer"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonPositionBackward"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.494" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPositionBackward"
+        android:layout_width="320dp"
+        android:layout_height="104dp"
+        android:background="@color/Button_position"
+        android:text="Reculer"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPositionStop"
+        android:layout_width="376dp"
+        android:layout_height="105dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/dark_red"
+        android:text="STOP"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPositionRight"
+        android:layout_width="140dp"
+        android:layout_height="110dp"
+        android:background="@color/Button_position"
+        android:text="Droite"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.83"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPositionLeft"
+        android:layout_width="140dp"
+        android:layout_height="110dp"
+        android:background="@color/Button_position"
+        android:text="Gauche"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.577" />
+
+    <TextView
+        android:id="@+id/textViewDeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="No Device Connected"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.194" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Connected device :"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="normal|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.193" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
